@@ -1,0 +1,159 @@
+a.text-muted:link, 
+a.text-muted:visited,
+a.text-muted:hover, 
+a.text-muted:active
+{
+    display: block;
+    text-decoration: none;
+}
+
+a.h6:link, 
+a.h6:visited,
+a.h6:hover, 
+a.h6:active
+{
+    font-size: 87%;
+    text-align: center;
+    text-decoration: none;
+}
+
+ol div.btnInfo,
+.text-muted
+{
+    font-size: 91%;
+}
+
+.h6
+{
+    font-size: 83%;
+}
+
+.card .card-header
+{
+    padding-bottom: 7%;
+    border-style: none;
+}
+
+ol.breadcrumb
+{
+    padding-left: 2%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header
+{
+    padding: 0.5%; 
+    padding-left: 1.5%; 
+    background-color:rgb(48, 114, 48); 
+    font-size: 143%; 
+    color: white; 
+    font-family: vernada;
+}
+
+
+div#menuBar.container
+{
+    margin-top: -10%;
+    padding-left: 10%;
+    width: 100%;
+}
+
+div.container-fluid
+{
+    padding: 1%;
+}
+
+/* nav button */
+button.navbar-toggler
+{
+    margin-top: -7%;    
+    margin-left: -3%;
+}
+
+/* navbar after expanded through nav button */
+div#navbarTogglerDemo01.p-2.navbar-collapse.collapse.show
+{
+    margin-left: -5%;
+    margin-top: 10%;
+    width: 100%; 
+}
+
+div#content.infoDisplay
+{
+    margin-top: -5%;
+    padding: 2%;
+}
+
+h6.display-4
+{
+    margin-left: 9%;
+}
+
+hr
+{
+    padding: 1%;
+}
+
+iframe
+{
+    height: 480px;
+    width: 103%;
+    border: none;
+    margin-top: -2.5%;
+    scroll-behavior: none;
+    overflow: none;
+    overflow: hidden;
+    text-overflow: none;
+    text-overflow: hidden;
+-webkit-overflow-scrolling: none;    
+}
+
+/* nav image styling
+div#topNav div header img#img
+{
+    height:"5px"; 
+    width:"5px"; 
+}*/
+
+/* image styling for content */
+div.col-sm-3 img,
+div.col-sm-4 img
+{
+    width: 93%;
+    height: 97%;
+}
+
+/* content base margin from another where required*/
+div#add.branch,
+div#access.branch,
+div#registration.access,
+div#step1.access,
+div#step2.access,
+div#step3.access,
+div#step4.access,
+div#barcode.inventory,
+div#nobarcode.inventory,
+div#search.inventory,
+div#shelve.inventory,
+div#add.store,
+div#manage.store,
+div#sale.home,
+div#add.users
+{
+    margin-bottom: 10%
+}
+
+footer
+{
+    margin-top: -0.2%;
+    background-color: #F3F3F3;
+    text-align: center; 
+    font-size: 80%; 
+    line-height: 1.25;
+    color: black;
+}
+
+a
+{
+    color: black;
+}
