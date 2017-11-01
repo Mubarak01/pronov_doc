@@ -8,156 +8,138 @@ function normalColor(x)
     x.style.color = "white";
 }
 
-function load_system_req() 
+function system_req() 
 {
     document.getElementById("content").innerHTML=
     '<iframe src="system_requirement.html"></iframe>';
 }
 
-function load_config() 
+function config() 
 {
      document.getElementById("content").innerHTML=
      '<iframe src="config.html"></iframe>';     
 }
 
-function load_config1() 
-{
-     document.getElementById("content").innerHTML=
-     '<iframe src="config.html#manage"" ></iframe>';
-}
-
-function load_config2() 
-{
-     document.getElementById("content").innerHTML=
-     '<iframe src="config.html#search"></iframe>';
-}
-
-function load_branches() 
+function add_branches() 
 {
      document.getElementById("content").innerHTML=
      '<iframe src="branches.html#add"></iframe>';
 }
 
-function load_branches1() 
+function access_branches() 
 {
      document.getElementById("content").innerHTML=
      '<iframe src="branches.html#access"></iframe>';
 }
 
-function load_branches2() 
+function manage_branches() 
 {
     document.getElementById("content").innerHTML=
     '<iframe src="branches.html#manage"></iframe>';
 }
 
-function load_users() 
+function add_users() 
 {
     document.getElementById("content").innerHTML=
     '<iframe src="users.html#add"></iframe>';
 }
 
-function load_users1() 
+function manage_users() 
 {
     document.getElementById("content").innerHTML=
     '<iframe src="users.html#manage"></iframe>';
 }
 
-function load_step1() 
+function reg_step1() 
 {
     document.getElementById("content").innerHTML=
     '<iframe src="access.html#step1"></iframe>';
 }
 
-function load_step2() 
+function reg_step2() 
 {
     document.getElementById("content").innerHTML=
     '<iframe src="access.html#step2"></iframe>';
 }
 
-function load_step3() 
+function reg_step3() 
 {
     document.getElementById("content").innerHTML=
     '<iframe src="access.html#step3"></iframe>';
 }
 
-function load_step4() 
+function reg_step4() 
 {
     document.getElementById("content").innerHTML=
     '<iframe src="access.html#step4"></iframe>';
 }
 
-function load_login() 
+function login_access() 
 {
     document.getElementById("content").innerHTML=
     '<iframe src="access.html#login"></iframe>';
 }
 
-function load_inventory() 
+function add_withBarcode() 
 {
     document.getElementById("content").innerHTML=
     '<iframe src="inventory.html#barcode"></iframe>';
 }
 
-function load_inventory1() 
+function add_withNoBarcode() 
 {
     document.getElementById("content").innerHTML=
     '<iframe src="inventory.html#nobarcode"></iframe>';
 }
-function load_inventory2() 
+function seachAndAdd() 
 {
     document.getElementById("content").innerHTML=
     '<iframe src="inventory.html#search"></iframe>';
 }
 
-function load_inventory3() 
+function inventory_shelve() 
 {
     document.getElementById("content").innerHTML=
     '<iframe src="inventory.html#shelve"></iframe>';
 }
 
-function load_inventory4() 
+function inventory_modify() 
 {
     document.getElementById("content").innerHTML=
     '<iframe src="inventory.html#modify"></iframe>';
 }
 
-function load_inventory5() 
-{
-    document.getElementById("content").innerHTML=
-    '<iframe src="inventory.html#modify-"></iframe>';
-}
-
-function load_dashboard() 
+function dashboard_sales() 
 {
     document.getElementById("content").innerHTML=
     '<iframe src="dashboard_home.html#sale"></iframe>';
 }
 
-function load_dashboard1() 
+function dashboard_query() 
 {
     document.getElementById("content").innerHTML=
     '<iframe src="dashboard_home.html#query"></iframe>';
 }
 
-function load_AddStore() 
+function add_Store() 
 {
     document.getElementById("content").innerHTML=
     '<iframe src="store.html#add"></iframe>';
 }
 
-function load_ManageStore() 
+function manage_store() 
 {
     document.getElementById("content").innerHTML=
     '<iframe src="store.html#manage"></iframe>';
 }
 
-function load_SearchStore() 
+function search_store() 
 {
     document.getElementById("content").innerHTML=
     '<iframe src="store.html#search"></iframe>';
 }
 
-function load_permissions() 
+function permissions() 
 {
     document.getElementById("content").innerHTML=
     '<iframe src="permission.html#permissions"></iframe>';

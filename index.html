@@ -15,7 +15,7 @@
         <!-- Font-awesome -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-        <link rel="icon" type="image/png" href="img\ProNOV.png">
+        <link rel="icon" type="image/png" href="img\pronov.png">
         <title> ProNOV Documentation </title>
         <link rel="stylesheet" href="css/style.css">
         <script src="js/main.js"></script>
@@ -131,7 +131,7 @@
 
                                             <div class="card-header" role="tab" id="headingTwo">
                                                 <h6 class="mb-0" onclick="openContent(event, 'SystemRequirements')">    
-                                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" small class="text-muted" onclick="load_system_req()">
+                                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" small class="text-muted" onclick="system_req()">
                                                         <i class="fa fa-list" aria-hidden="true"></i> 
                                                             Requirements 
                                                     </a>
@@ -162,25 +162,25 @@
                                                     </li>
                                                                     
                                                     <div class="dropdown-menu dropdown-menu-right">
-                                                        <a onclick="load_step1()" class="h6">
+                                                        <a onclick="reg_step1()" class="h6">
                                                             <button class="dropdown-item" type="button">
                                                                 Stage 1
                                                             </button>
                                                         </a>
                                                                 
-                                                        <a onclick="load_step2()" class="h6">
+                                                        <a onclick="reg_step2()" class="h6">
                                                             <button class="dropdown-item" type="button"> 
                                                                 Stage 2
                                                             </button>
                                                         </a>
 
-                                                        <a onclick="load_step3()" class="h6">
+                                                        <a onclick="reg_step3()" class="h6">
                                                             <button class="dropdown-item" type="button"> 
                                                                 Stage 3
                                                             </button>
                                                         </a>
 
-                                                        <a onclick="load_step4()" class="h6">
+                                                        <a onclick="reg_step4()" class="h6">
                                                             <button class="dropdown-item" type="button"> 
                                                                 Stage 4
                                                             </button>
@@ -190,7 +190,7 @@
                                                 </div>
                                                 
                                                 <li class="list-group-item">
-                                                    <a onclick="load_login()" class="h6"> 
+                                                    <a onclick="login_access()" class="h6"> 
                                                         <i class="fa fa-sign-in" aria-hidden="true"></i> 
                                                             Log In 
                                                     </a>
@@ -213,21 +213,21 @@
                                             <div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour">
                                                 <ul class="list-group">
                                                     <li class="list-group-item">
-                                                        <a onclick="load_branches()" class="h6">
+                                                        <a onclick="add_branches()" class="h6">
                                                             <i class="fa fa-plus" aria-hidden="true"></i> 
                                                                 Add 
                                                         </a>
                                                     </li>
 
                                                     <li class="list-group-item">
-                                                        <a onclick="load_branches1()" class="h6"> 
+                                                        <a onclick="access_branches()" class="h6"> 
                                                             <i class="fa fa-key" aria-hidden="true"></i> 
                                                                 Access 
                                                         </a>
                                                     </li>
 
                                                     <li class="list-group-item">
-                                                        <a onclick="load_branches2()" class="h6"> 
+                                                        <a onclick="manage_branches()" class="h6"> 
                                                             <i class="fa fa-puzzle-piece" aria-hidden="true"></i> 
                                                                 Manage </a>
                                                     </li>
@@ -249,27 +249,27 @@
                                                             
                                                 <div class="list-group-item">
                                                     <li class="btn-group" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                                        <a onclick="load_inventory0()" class="h6"> 
+                                                        <a class="h6"> 
                                                             <i class="fa fa-plus" aria-hidden="true"></i> 
                                                                 Add </a>
                                                     </li>
                                                     
                                                     <div class="dropdown-menu dropdown-menu-right">
-                                                        <a onclick="load_inventory()" class="h6">
+                                                        <a onclick="add_withBarcode()" class="h6">
                                                             <button class="dropdown-item" type="button"> 
                                                                 <i class="fa fa-barcode" aria-hidden="true"></i> 
                                                                     Barcode Scanning 
                                                             </button>
                                                         </a>
 
-                                                        <a onclick="load_inventory1()" class="h6">
+                                                        <a onclick="add_withNoBarcode()" class="h6">
                                                             <button class="dropdown-item" type="button">
                                                                 <i class="fa fa-pencil-square-o" aria-hidden="true"></i>                                                                 
                                                                     Add (No Barcode) 
                                                             </button>
                                                         </a>
                                                         
-                                                        <a onclick="load_inventory2()" class="h6">
+                                                        <a onclick="seachAndAdd()" class="h6">
                                                             <button class="dropdown-item" type="button"> 
                                                                 <i class="fa fa-search-plus" aria-hidden="true"></i> 
                                                                     Search + Add 
@@ -280,14 +280,14 @@
                                                 </div>
                                                 
                                                 <li class="list-group-item">
-                                                    <a onclick="load_inventory3()" class="h6"> 
+                                                    <a onclick="inventory_shelve()" class="h6"> 
                                                         <i class="fa fa-stack-exchange" aria-hidden="true"></i> 
                                                             Shelve 
                                                     </a>
                                                 </li>
                                                 
                                                 <li class="list-group-item">
-                                                    <a onclick="load_inventory4()" class="h6"> 
+                                                    <a onclick="inventory_modify()" class="h6"> 
                                                         <i class="fa fa-eraser" aria-hidden="true"></i> 
                                                             Modify 
                                                     </a>
@@ -310,20 +310,20 @@
                                             <div id="collapseSix" class="collapse" role="tabpanel" aria-labelledby="headingSix">                                            
                                                 <ul class="list-group">
                                                     <li class="list-group-item">
-                                                        <a onclick="load_AddStore()" class="h6"> 
+                                                        <a onclick="add_Store()" class="h6"> 
                                                             <i class="fa fa-plus" aria-hidden="true"></i> 
                                                                 Add  
                                                         </a>
                                                     </li>
 
                                                     <li class="list-group-item">
-                                                        <a onclick="load_ManageStore()" class="h6"> 
+                                                        <a onclick="manage_store()" class="h6"> 
                                                             <i class="fa fa-puzzle-piece" aria-hidden="true"></i> 
                                                                 Manage 
                                                         </a>
                                                     </li>
                                                     <li class="list-group-item">
-                                                        <a onclick="load_SearchStore()" class="h6"> 
+                                                        <a onclick="search_store()" class="h6"> 
                                                             <i class="fa fa-search" aria-hidden="true"></i> 
                                                                 Search 
                                                         </a>                                                
@@ -347,13 +347,13 @@
                                             <div id="collapseSeven" class="collapse" role="tabpanel" aria-labelledby="headingSeven">
                                                 <ul class="list-group">
                                                     <li class="list-group-item">
-                                                        <a onclick="load_users()" class="h6"> 
+                                                        <a onclick="add_users()" class="h6"> 
                                                             <i class="fa fa-plus" aria-hidden="true"></i> 
                                                                 Add 
                                                         </a>
                                                     </li>
                                                     <li class="list-group-item">
-                                                        <a onclick="load_users1()" class="h6"> 
+                                                        <a onclick="manage_users()" class="h6"> 
                                                             <i class="fa fa-puzzle-piece" aria-hidden="true"></i> 
                                                                 Manage 
                                                         </a>
@@ -377,13 +377,13 @@
                                             <div id="collapseEight" class="collapse" role="tabpanel1" aria-labelledby="headingEight">
                                                 <ul class="list-group">
                                                     <li class="list-group-item">
-                                                        <a onclick="load_dashboard()" class="h6">
+                                                        <a onclick="dashboard_sales()" class="h6">
                                                             <i class="fa fa-line-chart" aria-hidden="true"></i>  
                                                                 Sales                                                          
                                                         </a>
                                                     </li>
                                                     <li class="list-group-item">
-                                                        <a onclick="load_dashboard1()" class="h6">
+                                                        <a onclick="dashboard_query()" class="h6">
                                                             <i class="fa fa-binoculars" aria-hidden="true"></i>                                                                                                                            
                                                                 Query Transaction </a>
                                                     </li>
@@ -395,7 +395,7 @@
 
                                             <div class="card-header" role="tab" id="headingNine">
                                                 <h6 class="mb-0" onclick="openContent(event, 'Configuration')">
-                                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseNine" aria-expanded="false" aria-controls="collapseNine" small class="text-muted" onclick="load_config()">
+                                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseNine" aria-expanded="false" aria-controls="collapseNine" small class="text-muted" onclick="config()">
                                                         <i class="fa fa-cog fa-fw" aria-hidden="true"></i> 
                                                             Configuration
                                                     </a>
@@ -408,7 +408,7 @@
 
                                             <div class="card-header" role="tab" id="headingTen">
                                                 <h6 class="mb-0" onclick="openContent(event, 'Permissions')">
-                                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseTen" aria-expanded="false" aria-controls="collapseTen" small class="text-muted" onclick="load_permissions()">                                                    
+                                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseTen" aria-expanded="false" aria-controls="collapseTen" small class="text-muted" onclick="permissions()">                                                    
                                                         <i class="fa fa-shield" aria-hidden="true"></i> 
                                                             Permissions
                                                     </a>
