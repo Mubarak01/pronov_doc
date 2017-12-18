@@ -103,22 +103,28 @@ function inventory_shelve()
     '<iframe src="inventory.html#shelve"></iframe>';
 }
 
-function inventory_modify() 
+function inventory_modifyProduct() 
 {
     document.getElementById("content").innerHTML=
-    '<iframe src="inventory.html#modify"></iframe>';
+    '<iframe src="inventory.html#modifyProduct"></iframe>';
+}
+
+function inventory_modifyPrice() 
+{
+    document.getElementById("content").innerHTML=
+    '<iframe src="inventory.html#modifyPrice"></iframe>';
 }
 
 function dashboard_sales() 
 {
     document.getElementById("content").innerHTML=
-    '<iframe src="dashboard_home.html#sale"></iframe>';
+    '<iframe src="dashboard.html#sale"></iframe>';
 }
 
 function dashboard_query() 
 {
     document.getElementById("content").innerHTML=
-    '<iframe src="dashboard_home.html#query"></iframe>';
+    '<iframe src="dashboard.html#query"></iframe>';
 }
 
 function add_Store() 

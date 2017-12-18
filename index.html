@@ -2,96 +2,86 @@
 <html lang="en">
 
     <head>
+
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
         <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">            
-
-        <!-- Not in use for this project -->
-        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous"> -->
-
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+        
         <!-- Font-awesome -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.1/css/all.css">        
 
         <link rel="icon" type="image/png" href="img/pronov.png">
         <title> ProNOV Documentation </title>
         <link rel="stylesheet" href="css/style.css">
+        
+        <!-- <style>
+            .nav-items {
+                display: none;
+            }
+        </style> -->
+
         <script src="js/main.js"></script>
-        <script src="js/btnInfo.js"></script>                    
+
     </head>
     
     <body>
 
         <div id="topNav">
-
             <header>
                 <div role = "banner"> <img alt="ProNOV Logo" src="img/pronov.png" height="50" width= "50" id="img"> 
                     ProNOV Documentation 
                 </div>
             </header>           
                         
-            <div>
-                <nav aria-label="breadcrumb" role="navigation">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item active" aria-current="page">
+            <nav aria-label="breadcrumb" role="navigation">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item active nav-items" aria-current="page">
+                        <i class="fa fa-home fa-sm btnInfo" id="GettingStarted" aria-hidden="true">
+                                Home
+                        </i> 
+
+                        <i class="fa fa-sliders-h fa-sm btnInfo" id="SystemRequirements" aria-hidden="true">
+                                System Requirements    
+                        </i> 
+
+                        <i class="fa fa-key fa-sm btnInfo" id="Access" aria-hidden="true">
+                                Access  >>
+                        </i>
+
+                        <i class="fa fa-share-alt fa-sm btnInfo" id="Branches" aria-hidden="true">
+                                Branches >> 
+                        </i> 
+
+                        <i class="fa fa-shopping-cart fa-sm btnInfo" id="Inventory" aria-hidden="true">
+                                Inventory >>    
+                        </i> 
+
+                        <i class="fa fa-building fa-sm btnInfo" id="Store" aria-hidden="true">
+                                Store >>   
+                        </i> 
+
+                        <i class="fa fa-users fa-sm btnInfo" id="Users" aria-hidden="true">
+                                Users >>    
+                        </i> 
+
+                        <i class="fa fa-chart-area fa-sm btnInfo" id="Dashboard" aria-hidden="true">
+                                Dashboard    
+                        </i> 
+
+                        <i class="fa fa-cogs fa-sm btnInfo" id="Configuration" aria-hidden="true">
+                                Configuration    
+                        </i> 
                             
-                            <div id="GettingStarted" class="btnInfo">
-                                <i class="fa fa-home" aria-hidden="true"></i> 
-                                    Home
-                            </div>
-
-                            <div id="SystemRequirements" class="btnInfo">
-                                <i class="fa fa-list" aria-hidden="true"></i> 
-                                    System Requirements
-                            </div>
-        
-                            <div id="Access" class="btnInfo">
-                                <i class="fa fa-key" aria-hidden="true"></i> 
-                                    Access >
-                            </div>
-
-                            <div id="Branches" class="btnInfo">
-                                <i class="fa fa-share-alt" aria-hidden="true"></i> 
-                                    Branches >
-                            </div>
-
-                            <div id="Inventory" class="btnInfo">
-                                <i class="fa fa-shopping-cart" aria-hidden="true"></i> 
-                                    Inventory >
-                            </div>
-
-                            <div id="Store" class="btnInfo">
-                                <i class="fa fa-university" aria-hidden="true"></i> 
-                                    Store >
-                            </div>
-
-                            <div id="Users" class="btnInfo">
-                                <i class="fa fa-users" aria-hidden="true"></i> 
-                                    Users >
-                            </div>
-
-                            <div id="Dashboard" class="btnInfo">
-                                <i class="fa fa-area-chart" aria-hidden="true"></i> 
-                                    Dashboard >
-                            </div>
-
-                            <div id="Configuration" class="btnInfo">
-                                <i class="fa fa-cog fw-fa" aria-hidden="true"></i> 
-                                    Configuration
-                            </div>
-
-                            <div id="Permissions" class="btnInfo">
-                                <i class="fa fa-shield" aria-hidden="true"></i> 
-                                    Permissions
-                            </div>
-                                
-                        </li>
-                    </ol>
-                </nav>
-            </div>                              
-            
+                        <i class="fa fa-shield-alt fa-sm btnInfo" id="Permissions" aria-hidden="true">
+                                Permissions    
+                        </i> 
+                    </li>
+                </ol>
+            </nav>            
         </div>          
 
         <div class="container-fluid">
@@ -102,53 +92,51 @@
                         
                     <div class="col-sm-3">                         
                     
-                        <div class="navbar navbar-toggleable-sm navbar-light">
+                        <div class="navbar navbar-expand-sm navbar-light">
 
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>                                
                             </button>
                             
-                            <div class="p-2 collapse navbar-collapse" id="navbarTogglerDemo01">
-
+                            <div class="p-2 collapse navbar-collapse" id="navbarTogglerDemo03">
+                                    
                                 <div class="container" id="menuBar"> 
 
                                     <div id="accordion" role="tablist" aria-multiselectable="true">
                                             
                                         <div class="card">
 
-                                            <div class="card-header" role="tab" id="headingOne">
-                                                <h6 class="mb-0" onclick="openContent(event, 'GettingStarted')" id="defaultOpen">
-                                                    <a href="index.html" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne" small class="text-muted">
-                                                        <i class="fa fa-spinner" aria-hidden="true"></i> 
+                                            <div class="card-header h6 mb-0" role="tab" id="headingOne" onclick="openContent(event, 'GettingStarted')">
+                                                
+                                                <div id="defaultOpen">
+                                                    <a href="index.html" data-parent="#accordion" aria-expanded="false" aria-controls="collapseOne" small class="text-muted">
+                                                        <i class="fa fa-spinner fa-pulse" aria-hidden="true"></i> 
                                                             Getting Started
                                                     </a>
-                                                </h6>
+                                                </div>
+
                                             </div>
 
                                         </div>
 
                                         <div class="card">
 
-                                            <div class="card-header" role="tab" id="headingTwo">
-                                                <h6 class="mb-0" onclick="openContent(event, 'SystemRequirements')">    
-                                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" small class="text-muted" onclick="system_req()">
-                                                        <i class="fa fa-list" aria-hidden="true"></i> 
-                                                            Requirements 
-                                                    </a>
-                                                </h6>
+                                            <div class="card-header h6 mb-0" role="tab" id="headingTwo" onclick="openContent(event, 'SystemRequirements')">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" small class="text-muted" onclick="system_req()">
+                                                    <i class="fa fa-sliders-h" aria-hidden="true"></i> 
+                                                        Requirements 
+                                                </a>
                                             </div>    
 
                                         </div>
 
                                         <div class="card">  
 
-                                            <div class="card-header" role="tab" id="headingThree">
-                                                <h6 class="mb-0" onclick="openContent(event, 'Access')">
-                                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree"  small class="text-muted">
-                                                        <i class="fa fa-key" aria-hidden="true"></i> 
-                                                            Access
-                                                    </a>
-                                                </h6>
+                                            <div class="card-header h6 mb-0" role="tab" id="headingThree" onclick="openContent(event, 'Access')">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree"  small class="text-muted">
+                                                    <i class="fa fa-key" aria-hidden="true"></i> 
+                                                        Access
+                                                </a>
                                             </div>
                         
                                             <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
@@ -156,34 +144,26 @@
                                                 <div class="list-group-item">
                                                     <li class="btn-group" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                                                         <a class="h6"> 
-                                                            <i class="fa fa-pencil-square-o" aria-hidden="true"></i>                                                                     
+                                                            <i class="fa fa-edit" aria-hidden="true"></i> 
                                                                 Registration 
                                                         </a>
                                                     </li>
                                                                     
                                                     <div class="dropdown-menu dropdown-menu-right">
-                                                        <a onclick="reg_step1()" class="h6">
-                                                            <button class="dropdown-item" type="button">
+                                                        <a onclick="reg_step1()" class="h6 dropdown-item">
                                                                 Stage 1
-                                                            </button>
                                                         </a>
                                                                 
-                                                        <a onclick="reg_step2()" class="h6">
-                                                            <button class="dropdown-item" type="button"> 
+                                                        <a onclick="reg_step2()" class="h6 dropdown-item">
                                                                 Stage 2
-                                                            </button>
                                                         </a>
 
-                                                        <a onclick="reg_step3()" class="h6">
-                                                            <button class="dropdown-item" type="button"> 
+                                                        <a onclick="reg_step3()" class="h6 dropdown-item">
                                                                 Stage 3
-                                                            </button>
                                                         </a>
 
-                                                        <a onclick="reg_step4()" class="h6">
-                                                            <button class="dropdown-item" type="button"> 
+                                                        <a onclick="reg_step4()" class="h6 dropdown-item">
                                                                 Stage 4
-                                                            </button>
                                                         </a>
                                                     </div>
                                                 
@@ -191,7 +171,7 @@
                                                 
                                                 <li class="list-group-item">
                                                     <a onclick="login_access()" class="h6"> 
-                                                        <i class="fa fa-sign-in" aria-hidden="true"></i> 
+                                                        <i class="fa fa-sign-in-alt" aria-hidden="true"></i> 
                                                             Log In 
                                                     </a>
                                                 </li>
@@ -201,20 +181,18 @@
 
                                         <div class="card">
 
-                                            <div class="card-header" role="tab" id="headingFour">
-                                                <h6 class="mb-0" onclick="openContent(event, 'Branches')">
-                                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour" small class="text-muted">
-                                                        <i class="fa fa-share-alt" aria-hidden="true"></i> 
-                                                            Branches
-                                                    </a>
-                                                </h6>
+                                            <div class="card-header h6 mb-0" role="tab" id="headingFour" onclick="openContent(event, 'Branches')">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour" small class="text-muted">
+                                                    <i class="fa fa-code-branch" aria-hidden="true"></i> 
+                                                        Branches
+                                                </a>
                                             </div>
                                         
                                             <div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour">
                                                 <ul class="list-group">
                                                     <li class="list-group-item">
                                                         <a onclick="add_branches()" class="h6">
-                                                            <i class="fa fa-plus" aria-hidden="true"></i> 
+                                                            <i class="fa fa-plus-circle" aria-hidden="true"></i> 
                                                                 Add 
                                                         </a>
                                                     </li>
@@ -229,20 +207,21 @@
                                                     <li class="list-group-item">
                                                         <a onclick="manage_branches()" class="h6"> 
                                                             <i class="fa fa-puzzle-piece" aria-hidden="true"></i> 
-                                                                Manage </a>
+                                                                Manage 
+                                                        </a>
                                                     </li>
                                                 </ul>
                                             </div>
+                                            
                                         </div>
 
-                                        <div class="card">                                        
-                                            <div class="card-header" role="tab" id="headingFive">
-                                                <h6 class="mb-0" onclick="openContent(event, 'Inventory')">
-                                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive"  small class="text-muted">
-                                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i> 
-                                                        Inventory
-                                                    </a>
-                                                </h6>
+                                        <div class="card">    
+
+                                            <div class="card-header h6 mb-0" role="tab" id="headingFive" onclick="openContent(event, 'Inventory')">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive"  small class="text-muted">
+                                                    <i class="fa fa-cart-arrow-down" aria-hidden="true"></i> 
+                                                    Inventory
+                                                </a>
                                             </div>
                         
                                             <div id="collapseFive" class="collapse" role="tabpanel" aria-labelledby="headingFive">
@@ -250,30 +229,25 @@
                                                 <div class="list-group-item">
                                                     <li class="btn-group" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                                                         <a class="h6"> 
-                                                            <i class="fa fa-plus" aria-hidden="true"></i> 
-                                                                Add </a>
+                                                            <i class="fa fa-cart-plus" aria-hidden="true"></i> 
+                                                                Add 
+                                                        </a>
                                                     </li>
                                                     
                                                     <div class="dropdown-menu dropdown-menu-right">
-                                                        <a onclick="add_withBarcode()" class="h6">
-                                                            <button class="dropdown-item" type="button"> 
-                                                                <i class="fa fa-barcode" aria-hidden="true"></i> 
-                                                                    Barcode Scanning 
-                                                            </button>
+                                                        <a onclick="add_withBarcode()" class="h6 dropdown-item">
+                                                            <i class="fa fa-barcode" aria-hidden="true"></i> 
+                                                                Barcode Scanning 
                                                         </a>
 
-                                                        <a onclick="add_withNoBarcode()" class="h6">
-                                                            <button class="dropdown-item" type="button">
-                                                                <i class="fa fa-pencil-square-o" aria-hidden="true"></i>                                                                 
-                                                                    Add (No Barcode) 
-                                                            </button>
+                                                        <a onclick="add_withNoBarcode()" class="h6 dropdown-item">
+                                                            <i class="fa fa-plus-circle" aria-hidden="true"></i>                                                                 
+                                                                Add (No Barcode) 
                                                         </a>
                                                         
-                                                        <a onclick="seachAndAdd()" class="h6">
-                                                            <button class="dropdown-item" type="button"> 
-                                                                <i class="fa fa-search-plus" aria-hidden="true"></i> 
-                                                                    Search + Add 
-                                                            </button>
+                                                        <a onclick="seachAndAdd()" class="h6 dropdown-item">
+                                                            <i class="fa fa-search-plus" aria-hidden="true"></i> 
+                                                                Search + Add 
                                                         </a>
                                                     </div>
                                                                     
@@ -281,37 +255,51 @@
                                                 
                                                 <li class="list-group-item">
                                                     <a onclick="inventory_shelve()" class="h6"> 
-                                                        <i class="fa fa-stack-exchange" aria-hidden="true"></i> 
+                                                        <i class="fa fa-indent" aria-hidden="true"></i> 
                                                             Shelve 
                                                     </a>
                                                 </li>
                                                 
-                                                <li class="list-group-item">
-                                                    <a onclick="inventory_modify()" class="h6"> 
-                                                        <i class="fa fa-eraser" aria-hidden="true"></i> 
-                                                            Modify 
-                                                    </a>
-                                                </li>
-                                            </div>
+                                                <div class="list-group-item">                                                        
+                                                    <li class="btn-group" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                                        <a class="h6"> 
+                                                            <i class="fa fa-pencil-alt" aria-hidden="true"></i> 
+                                                                Modify 
+                                                        </a>
+                                                    </li>
+
+                                                    <div class="dropdown-menu dropdown-menu-right">
+                                                        <a onclick="inventory_modifyProduct()" class="h6 dropdown-item">
+                                                            <i class="fa fa-file" aria-hidden="true"></i> 
+                                                                Product Details
+                                                        </a>
+
+                                                        <a onclick="inventory_modifyPrice()" class="h6 dropdown-item">
+                                                            <i class="fa fa-dollar-sign" aria-hidden="true"></i>                                                                 
+                                                                Price Change
+                                                        </a>
+                                                            
+                                                    </div>
+                                                </div>
                                         
+                                            </div>
+                                            
                                         </div>
                                         
                                         <div class="card">
 
-                                            <div class="card-header" role="tab" id="headingSix">
-                                                <h6 class="mb-0" onclick="openContent(event, 'Store')">
-                                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix" small class="text-muted">                                                    
-                                                        <i class="fa fa-university" aria-hidden="true"></i> 
-                                                            Store
-                                                    </a>
-                                                </h6>
+                                            <div class="card-header h6 mb-0" role="tab" id="headingSix" onclick="openContent(event, 'Store')">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix" small class="text-muted">                                                    
+                                                    <i class="fa fa-building" aria-hidden="true"></i> 
+                                                        Store
+                                                </a>
                                             </div>
                                 
                                             <div id="collapseSix" class="collapse" role="tabpanel" aria-labelledby="headingSix">                                            
                                                 <ul class="list-group">
                                                     <li class="list-group-item">
                                                         <a onclick="add_Store()" class="h6"> 
-                                                            <i class="fa fa-plus" aria-hidden="true"></i> 
+                                                            <i class="fa fa-plus-circle" aria-hidden="true"></i> 
                                                                 Add  
                                                         </a>
                                                     </li>
@@ -335,20 +323,18 @@
 
                                         <div class="card">
 
-                                            <div class="card-header" role="tab" id="headingSeven">
-                                                <h6 class="mb-0" onclick="openContent(event, 'Users')">
-                                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven" small class="text-muted">
-                                                        <i class="fa fa-users" aria-hidden="true"></i> 
-                                                            Users
-                                                    </a>
-                                                </h6>
+                                            <div class="card-header h6 mb-0" role="tab" id="headingSeven" onclick="openContent(event, 'Users')">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven" small class="text-muted">
+                                                    <i class="fa fa-users" aria-hidden="true"></i> 
+                                                        Users
+                                                </a>
                                             </div>
                                                 
                                             <div id="collapseSeven" class="collapse" role="tabpanel" aria-labelledby="headingSeven">
                                                 <ul class="list-group">
                                                     <li class="list-group-item">
                                                         <a onclick="add_users()" class="h6"> 
-                                                            <i class="fa fa-plus" aria-hidden="true"></i> 
+                                                            <i class="fa fa-user-plus" aria-hidden="true"></i> 
                                                                 Add 
                                                         </a>
                                                     </li>
@@ -365,26 +351,25 @@
 
                                         <div class="card">
 
-                                            <div class="card-header" role="tab" id="headingEight">
-                                                <h6 class="mb-0" onclick="openContent(event, 'Dashboard')">
-                                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseEight" aria-expanded="false" aria-controls="collapseEight" small class="text-muted">
-                                                        <i class="fa fa-area-chart" aria-hidden="true"></i> 
-                                                            Dashboard (Home)
-                                                    </a>
-                                                </h6>
+                                            <div class="card-header h6 mb-0" role="tab" id="headingEight" onclick="openContent(event, 'Dashboard')">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseEight" aria-expanded="false" aria-controls="collapseEight" small class="text-muted">
+                                                    <i class="fa fa-chart-area" aria-hidden="true"></i> 
+                                                        Dashboard
+                                                </a>
                                             </div>
 
                                             <div id="collapseEight" class="collapse" role="tabpanel1" aria-labelledby="headingEight">
                                                 <ul class="list-group">
                                                     <li class="list-group-item">
                                                         <a onclick="dashboard_sales()" class="h6">
-                                                            <i class="fa fa-line-chart" aria-hidden="true"></i>  
+                                                            <i class="fa fa-chart-line" aria-hidden="true"></i>  
                                                                 Sales                                                          
                                                         </a>
                                                     </li>
+
                                                     <li class="list-group-item">
                                                         <a onclick="dashboard_query()" class="h6">
-                                                            <i class="fa fa-binoculars" aria-hidden="true"></i>                                                                                                                            
+                                                            <i class="fa fa-binoculars" aria-hidden="true"></i> 
                                                                 Query Transaction </a>
                                                     </li>
                                                 </ul>
@@ -393,26 +378,22 @@
                                             
                                         <div class="card">
 
-                                            <div class="card-header" role="tab" id="headingNine">
-                                                <h6 class="mb-0" onclick="openContent(event, 'Configuration')">
-                                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseNine" aria-expanded="false" aria-controls="collapseNine" small class="text-muted" onclick="config()">
-                                                        <i class="fa fa-cog fa-fw" aria-hidden="true"></i> 
-                                                            Configuration
-                                                    </a>
-                                                </h6>
+                                            <div class="card-header h6 mb-0" role="tab" id="headingNine" onclick="openContent(event, 'Configuration')">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseNine" aria-expanded="false" aria-controls="collapseNine" small class="text-muted" onclick="config()">
+                                                    <i class="fa fa-cogs" aria-hidden="true"></i> 
+                                                        Configuration
+                                                </a>
                                             </div>
 
                                         </div>
                         
                                         <div class="card">
 
-                                            <div class="card-header" role="tab" id="headingTen">
-                                                <h6 class="mb-0" onclick="openContent(event, 'Permissions')">
-                                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseTen" aria-expanded="false" aria-controls="collapseTen" small class="text-muted" onclick="permissions()">                                                    
-                                                        <i class="fa fa-shield" aria-hidden="true"></i> 
-                                                            Permissions
-                                                    </a>
-                                                </h6>
+                                            <div class="card-header h6 mb-0" role="tab" id="headingTen" onclick="openContent(event, 'Permissions')">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseTen" aria-expanded="false" aria-controls="collapseTen" small class="text-muted" onclick="permissions()">                                                    
+                                                    <i class="fa fa-shield-alt" aria-hidden="true"></i> 
+                                                        Permissions
+                                                </a>
                                             </div> 
 
                                         </div>
@@ -443,7 +424,7 @@
                                 <ol>
                                     <li> Navigate the documentation by clicking the available tabs to select what you want. </li>
                                     <li> Consider supporting the app by sending in your feedback. </li>
-                                    <li class="lead"> Thanks and happy using our app. </li>
+                                    <li> Thanks and happy using our app. </li>
                                 </ol>
                             </div>
                     
@@ -473,17 +454,6 @@
         </div>
         <!-- End of footer -->
         
-            <!-- Optional JavaScript -->
-            <!-- jQuery first, then Tether, then Bootstrap JS. -->
-            <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>            
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>            
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-            
-            <!-- Not in use for this product as commented below (jQuery first, then Popper.js, then Bootstrap JS) -->
-            <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script> -->
-
         <script>
             function openContent(evt, accordionList)
             {
@@ -509,6 +479,12 @@
             // On default, get the element with id="defaultOpen", else get element clicked
             document.getElementById("defaultOpen").click();
         </script>
+                    
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 
     </body>
 </html>

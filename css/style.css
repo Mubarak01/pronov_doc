@@ -7,12 +7,23 @@ a.text-muted:active
     text-decoration: none;
 }
 
+a.h6
+{
+    font-size: 87%;
+}
+
+a.h6.dropdown-item
+{
+    padding-left: 25%;
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+}
+
 a.h6:link, 
 a.h6:visited,
 a.h6:hover, 
 a.h6:active
 {
-    font-size: 87%;
+    font-size: 91%;
     text-align: center;
     text-decoration: none;
 }
@@ -20,12 +31,7 @@ a.h6:active
 ol div.btnInfo,
 .text-muted
 {
-    font-size: 91%;
-}
-
-.h6
-{
-    font-size: 83%;
+    font-size: 79%;
 }
 
 .card .card-header
@@ -37,7 +43,7 @@ ol div.btnInfo,
 ol.breadcrumb
 {
     padding-left: 2%;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 header
@@ -45,16 +51,17 @@ header
     padding: 0.5%; 
     padding-left: 1.5%; 
     background-color:rgb(48, 114, 48); 
-    font-size: 143%; 
+    font-size: 153%; 
     color: white; 
-    font-family: vernada;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 
 div#menuBar.container
 {
-    margin-top: -10%;
-    padding-left: 10%;
+    margin-top: 1%;
+    padding-left: 15%;
+    padding-right: 10%;
     width: 100%;
 }
 
@@ -108,13 +115,6 @@ iframe
 -webkit-overflow-scrolling: none;    
 }
 
-/* nav image styling
-div#topNav div header img#img
-{
-    height:"5px"; 
-    width:"5px"; 
-}*/
-
 /* image styling for content */
 div.col-sm-3 img,
 div.col-sm-4 img
@@ -137,7 +137,7 @@ div#search.inventory,
 div#shelve.inventory,
 div#add.store,
 div#manage.store,
-div#sale.home,
+div#sale.dashboard,
 div#add.users
 {
     margin-bottom: 10%
